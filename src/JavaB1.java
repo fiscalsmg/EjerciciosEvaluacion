@@ -6,8 +6,7 @@ public class JavaB1 {
         System.out.println("Ingresa el valor de la piramide");
         int n= in.nextInt();
 
-        //cuadrado(n);
-        //contorno(n);
+
         triangulo(n);
     }
 

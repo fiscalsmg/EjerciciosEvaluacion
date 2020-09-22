@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class JavaB0 {
-    private static String bin;
-    private static  String[] marks;
+    private static String bin,deci;
+    private static  String[] marca;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -10,31 +10,31 @@ public class JavaB0 {
 
         System.out.println("ingresa una cadena de numeros");
         num=in.nextLine();
-        marks= num.split(",");
-        exerciseOne();
+        marca= num.split(",");
+        ejercicio1();
 
     }
 
-    static public void exerciseOne(){
-        int [] binario=new int[marks.length];
-        for (int i = 0; i< marks.length; i++)    {
-            binario[i]=Integer.parseInt(marks[i]);
+    static public void ejercicio1(){
+        int [] binario=new int[marca.length];
+        for (int i = 0; i< marca.length; i++)    {
+            binario[i]=Integer.parseInt(marca[i]);
             if((binario[i]  <= 127) && (binario[i] >= (-128))){
                 bin=Integer.toBinaryString(binario[i] & 0xFF);
                 System.out.print(bin+",");
             }
         }
+        System.out.println("\n");
         for (int i = 0; i < binario.length ; i++) {
-            exercisesTwo(bin);
+            //System.out.println(binario[i]);
+                deci=Integer.toBinaryString(binario[i] & 0xFF);
+                ejercicio2(deci);
         }
-
     }
 
-    static public void exercisesTwo(String bin){
-
-         //int decimalConvertido = Integer.parseInt(bin, 2);
-         //System.out.println(" "+decimalConvertido);
-
+    static public void ejercicio2(String bin){
+         int decimalConvertido = Integer.parseInt(bin, 2);
+         System.out.print(decimalConvertido+",");
     }
 
 }
