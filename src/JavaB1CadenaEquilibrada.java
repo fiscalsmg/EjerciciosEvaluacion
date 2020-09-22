@@ -8,19 +8,25 @@ public class JavaB1CadenaEquilibrada {
         String cad= in.nextLine();
 
         Stack pila = new Stack();
-        char[] c;
+        //char[] c ;
+        char c;
+        String complemento="()";
+        String cadenaCompleta = null;
         for (int i = 0; i < cad.length(); i++) {
-            c=cad.toCharArray();
+            //c=cad.toCharArray();
+            c=cad.charAt(i);
+            if(c=='('){
+                cadenaCompleta=cad.replace("(","");
+            }
 
-            if(c[i]=='('){
-                pila.push(c[i]);
-            }
-            if(c[i]== ')'){
-                //pila.push("()");
-                pila.pop();
-            }
+            System.out.println(c);
         }
-        System.out.println(pila);
+
+        System.out.println(cadenaCompleta);
     }
 
 }
+
+            /*if(c==')'){
+                cadenaCompleta=cad.replace(")","");
+            }*/
