@@ -12,13 +12,10 @@ public class JavaB2 {
         int[] guardaNumeros = new int[numero];
         String listaDeNumeros="";
 
-        ArrayList<Integer> poss = new ArrayList<Integer>();
         for (int i = 0; i < numero; i++) {
             System.out.println("Numero "+(i+1)+ " Ingresado");
             guardaNumeros[i]=in.nextInt();
-            //guardaNumeros[i]=Integer.parseInt(JOptionPane.showInputDialog("Numero "+(i+1)+ " Ingresado"));
             listaDeNumeros=listaDeNumeros+guardaNumeros[i]+",";
-            //poss.add(in.nextInt());
         }
         System.out.println(listaDeNumeros);
 
@@ -47,29 +44,3 @@ public class JavaB2 {
 
     }
 }
-/*
-
-
-
-         //pedir rotaciones
-        int numRotaciones = 0;
-        while (numRotaciones<1) {
-            System.out.print("Cantidad de rotaciones: ");
-            numRotaciones = in.nextInt();
-            if(numRotaciones<1){
-                System.out.println("Cantidad no válida. Debe ser mayor de 0.\n");
-            }
-        }
-        for (int j = 0; j <numRotaciones ; j++) {
-            System.out.println("hola");
-            int aux = guardaNumeros[1];
-            for (int i = 0; i < guardaNumeros.length-1; i++) {
-                guardaNumeros[i] = guardaNumeros[i+1];
-                //System.out.print("\n"+guardaNumeros[i+1]);
-
-            }
-            guardaNumeros[guardaNumeros.length-1] = aux;
-            System.out.print(aux);
-        }
-
-* */
