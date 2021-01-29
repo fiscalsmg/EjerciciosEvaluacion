@@ -21,34 +21,4 @@ public class JavaB1 {
             System.out.println("");//da los saltos respecto a n
         }
     }
-    static public void cuadrado(int n){
-        //valida
-        for (int i = 0; i <n ; i++) {
-            for (int j = 0; j <n ; j++) {
-                System.out.print(" * ");
-            }
-            System.out.println(" ");
-        }
-    }
-    static public void contorno(int n){
-        //arriba
-        for (int j = 0; j <n ; j++) {
-            System.out.print(" *");
-        }
-        System.out.println("");
-
-        //medio
-        for (int i = 0; i <n-2 ; i++) {
-            System.out.print(" * ");
-            for (int j = 0; j <n-2 ; j++) {
-                System.out.print(" ");
-            }
-            System.out.println("   * ");
-        }
-        //final
-        for (int j = 0; j <n ; j++) {
-            System.out.print(" *");
-        }
-        System.out.println(" ");
-    }
 }

@@ -26,7 +26,3 @@ public class JavaB1CadenaEquilibrada {
     }
 
 }
-
-            /*if(c==')'){
-                cadenaCompleta=cad.replace(")","");
-            }*/
